@@ -43,7 +43,7 @@ public class SmsApiController {
         }
     }
 
-    //使用国阳云发送短信
+    //使用国阳云发送短信   已过期
     @GetMapping("sendMsgByGyy/{phone}")
     public R sendMsgByGyy(@PathVariable String phone){
         //从redis中获取验证码,如果获取则直接返回..==> 根据现实情况,用户可以多次发送.
